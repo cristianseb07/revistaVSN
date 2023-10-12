@@ -1,0 +1,107 @@
+main {
+
+  margin: 0 auto;
+  max-width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 20% 1fr 30%;
+  grid-template-rows: 50px
+    50px
+    1fr
+    100px
+    200px;
+  grid-template-areas: 
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-section my-section my-aside"
+    "my-footer my-footer my-footer"
+}
+
+header {
+  grid-area: my-header;
+  background-color: #90EE90;
+}
+
+nav {
+  grid-area: my-nav;
+  background-color: cornflowerblue;
+}
+
+aside {
+  grid-area: my-aside;
+  background-color: darkmagenta;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+/* SECTION */
+section {
+  grid-area: my-section;
+  background-color: indigo;
+  padding: 2% 2%;
+}
+
+
+
+section h2 {
+  color: #FF0000;
+}
+
+section .row {
+  padding: 2% 2%;
+}
+
+section .precio-card {
+  padding: 2% 2%;
+
+
+}
+
+section h3 {
+  padding-bottom: 0%;
+
+}
+
+section h4 {
+  padding-bottom: 0%;
+  color: #FF0000;
+
+}
+
+
+
+
+footer {
+  grid-area: my-footer;
+  background-color: darkorchid;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  main {
+    grid-template-columns: 20% 1fr 30%;
+    grid-template-rows: 50px
+      80%
+      1fr
+      100px;
+    grid-template-areas: 
+      "my-header my-header my-header"
+      "my-nav my-section my-aside"
+      "my-footer my-footer my-footer"
+  }
+}
+
+@media (min-width: 1001px) {
+  main {
+    grid-template-columns: 20% 1fr 30%;
+    grid-template-rows: 50px
+      80%
+      1fr
+      100px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-section my-aside"
+      "my-footer my-footer my-footer"
+  }
+}
