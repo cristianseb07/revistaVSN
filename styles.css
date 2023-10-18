@@ -29,7 +29,7 @@ nav {
 
 aside {
   grid-area: my-aside;
-  background-color: darkmagenta;
+  background-color: magenta;
 }
 
 p {
